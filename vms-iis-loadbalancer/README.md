@@ -5,11 +5,11 @@
 This ARM template creates:
 - 1 Virtual Network
 - 1 Subnet
-- 1 Public IP with a dynamic IP and random DNS name label
+- 1 Public IP with a dynamic IP and uniqueString DNS name label
 - 1 Load Balancer
 - 1 Network Security Group with 2 rules
-- 1 Storage Account for VM's disks
-- 1 Storage Account for VMs's diagnostics
+- 1 Storage Account (uniqueString name) for VM's disks
+- 1 Storage Account (uniqueString name) for VMs's diagnostics
 - 1 Availability Set
 - 2 VMs
 - DSC extension to install IIS and create a sample HTML file.
