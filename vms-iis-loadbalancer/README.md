@@ -1,1 +1,1 @@
-<a href="https://portal.azure.com/#create/microsoft.template/uri/https%3a%2f%2fgithub.com%2fdanieldbr%2fazure-arm-templates%2fblob%2fmaster%2fvms-iis-loadbalancer%2fazuredeploy.json"><img src="http://azuredeploy.net/deploybutton.png"></a>
+<a href="https://portal.azure.com/#create/microsoft.template/uri/https%3a%2f%2fraw.githubusercontent.com%2fdanieldbr%2fazure-arm-templates%2fmaster%2fvms-iis-loadbalancer%2fazuredeploy.json"><img src="http://azuredeploy.net/deploybutton.png"></a>
