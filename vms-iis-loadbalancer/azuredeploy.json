@@ -30,13 +30,6 @@
         "description": "Subnet Address Range"
       }
     },
-    "publicIPDNSNameLabel": {
-      "type": "string",
-      "defaultValue": "[concat(uniqueString(resourceGroup().id))]",
-      "metadata": {
-        "description": "DNS name label"
-      }
-    },
     "vm1Name": {
       "type": "string",
       "defaultValue": "WebNode1",
@@ -70,6 +63,7 @@
   "variables": {
     "nsgName": "NetworkSecurityGroup",
     "publicIPName": "PublicIP",
+    "publicIPDNSNameLabel": "[concat(uniqueString(resourceGroup().id))]",
     "diagStorageAccountName": "[concat('diagstg', uniqueString(resourceGroup().id))]",
     "dataStorageAccountName": "[concat('datastg', uniqueString(resourceGroup().id))]",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]",
@@ -95,7 +89,7 @@
       "properties": {
         "publicIPAllocationMethod": "Dynamic",
         "dnsSettings": {
-          "domainNameLabel": "[parameters('publicIPDNSNameLabel')]"
+          "domainNameLabel": "[variables('publicIPDNSNameLabel')]"
         }
       }
     },
@@ -460,7 +454,7 @@
   "outputs": {
     "publicIPDNSNameLabel": {
       "type": "string",
-      "value": "[parameters('publicIPDNSNameLabel')]"
+      "value": "[variables('publicIPDNSNameLabel')]"
     }
   }
 }
