@@ -424,7 +424,7 @@
         "typeHandlerVersion": "2.1",
         "autoUpgradeMinorVersion": true,
         "settings": {
-          "ModulesUrl": "https://raw.githubusercontent.com/danieldbr/dsc/master/DeployWebPage1.zip",
+          "ModulesUrl": "https://raw.githubusercontent.com/danieldbr/powershell-dsc/master/vms-iis-loadbalancer-dsc-files/DeployWebPage1.zip",
           "ConfigurationFunction": "DeployWebPage.ps1\\DeployWebPage"
         },
         "protectedSettings": null
@@ -444,7 +444,7 @@
         "typeHandlerVersion": "2.1",
         "autoUpgradeMinorVersion": true,
         "settings": {
-          "ModulesUrl": "https://raw.githubusercontent.com/danieldbr/dsc/master/DeployWebPage2.zip",
+          "ModulesUrl": "https://raw.githubusercontent.com/danieldbr/powershell-dsc/master/vms-iis-loadbalancer-dsc-files/DeployWebPage2.zip",
           "ConfigurationFunction": "DeployWebPage.ps1\\DeployWebPage"
         },
         "protectedSettings": null
